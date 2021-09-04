@@ -17,16 +17,18 @@ class PageObjects(object):
             self.driver.back()
 
     def skip(self):
-        """ Click on startup skip button """
         self.driver.find_element(*Locators.SKIP).click()
-
-    def adding_note(self):
-        """ Click on buttons to adding a new note """
+    
+    """ Menu """
+    def menu_adding_note(self):
         self.driver.find_element(*Locators.ADD_NOTE_BUTTON).click()
+        
+    def menu_adding_note_text(self):
         self.driver.find_element(*Locators.ADD_TEXT_BUTTON).click()
-
-    def editing_note(self, title, text):
-        """ Send keywords to title and note textbox """
+    
+    """ Editing """
+    def editing_note_title(self, title):
         self.driver.find_element(*Locators.TYPE_TITLE_TEXT).send_keys(title)
-        self.driver.find_element(*Locators.TYPE_TEXT).send_keys(text)
 
+    def editing_note_text(self, text):
+        self.driver.find_element(*Locators.TYPE_TEXT).send_keys(text)
