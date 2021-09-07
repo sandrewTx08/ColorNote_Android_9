@@ -2,7 +2,7 @@ Feature: Do tutorial
   User perform the tutorial
 
   Scenario: Creating text
-    Given first app running
+    Given first app running (1)
     When "Welcome to ColorNote" show up
     Then tap on right arrow button
     And tap to create note button

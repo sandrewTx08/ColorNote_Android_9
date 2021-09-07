@@ -1,140 +1,129 @@
 from behave import *
+import sys
+sys.path.append('../..')
+from setup import Setup as Android
+
+
+@given(u'first app running (1)')
+def step_impl(context):
+    Android.page.creating_text()
+    Android.page.implicitly_wait(3)
+    Android.page.creating_checkbox()
+    Android.page.implicitly_wait(3)
+    Android.page.final_step()
 
 @when(u'"Welcome to ColorNote" show up')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: When "Welcome to ColorNote" show up')
-
+    pass
 
 @then(u'tap on right arrow button')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap on right arrow button')
-
+    pass
 
 @then(u'tap to create note button')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap to create note button')
-
+    pass
 
 @then(u'tap add text note type')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap add text note type')
-
+    pass
 
 @then(u'type some text')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then type some text')
-
+    pass
 
 @then(u'press tree back button to close keyboard and save')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then press tree back button to close keyboard and save')
-
-
+    pass
 @given(u'user continue the tutorial')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Given user continue the tutorial')
-
+    pass
 
 @when(u'"Create a checklist" show up')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: When "Create a checklist" show up')
-
+    pass
 
 @then(u'tap create a note button')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap create a note button')
-
+    pass
 
 @then(u'tap add checklist')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap add checklist')
+    pass
 
 
 @then(u'tap at title textbox')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap at title textbox')
+    pass
 
 
 @then(u'tap "Add item"')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap "Add item"')
+    pass
 
 
 @then(u'tap "Add item" textbox')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap "Add item" textbox')
+    pass
 
 
 @then(u'tap "Next"')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap "Next"')
+    pass
 
 
 @then(u'tap "OK"')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap "OK"')
-
+    pass
 
 @then(u'press twice back button to save')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then press twice back button to save')
-
+    pass
 
 @when(u'"Open the saved note" show up')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: When "Open the saved note" show up')
-
+    pass
 
 @then(u'tap on last added note')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap on last added note')
-
+    pass
 
 @then(u'on Pick up laundry')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then on Pick up laundry')
-
+    pass
 
 @then(u'tap edit the note')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap edit the note')
-
+    pass
 
 @then(u'tap on change note color button')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap on change note color button')
-
+    pass
 
 @then(u'choose color red')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then choose color red')
-
+    pass
 
 @then(u'press back button to save')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then press back button to save')
-
+    pass
 
 @then(u'tap on editing note')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap on editing note')
-
+    pass
 
 @then(u'tap pin status bar (dropdown menu)')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap pin status bar (dropdown menu)')
-
+    pass
 
 @then(u'tap reminder')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap reminder')
-
+    pass
 
 @then(u'tap "Pin to status bar"')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then tap "Pin to status bar"')
-
+    pass
 
 @then(u'twice back button to save')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then twice back button to save')
+    pass

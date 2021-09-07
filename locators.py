@@ -13,3 +13,7 @@ class Locators(object):
     """ Inside note """
     TYPE_TITLE_TEXT = (By.ID,  f'{APP_NAME}:id/edit_title')
     TYPE_TEXT = (By.ID,  f'{APP_NAME}:id/edit_note')
+
+    """ Tutorial buttons """
+    START_TUTORIAL_BUTTON = (By.ID, f'{APP_NAME}:id/btn_start')
+    SKIP_TUTORIAL_BUTTON = (By.ID, f'{APP_NAME}:id/btn_next')

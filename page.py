@@ -1,10 +1,14 @@
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from locators import Locators
 from time import sleep
 
 
 class PageObjects(object):
+
     def __init__(self, driver):
         self.driver = driver
+        self.wait = WebDriverWait(self.driver, 5)
 
     def implicitly_wait(self, secs):
         """ Wait for elements appear """
@@ -32,3 +36,69 @@ class PageObjects(object):
 
     def editing_note_text(self, text):
         self.driver.find_element(*Locators.TYPE_TEXT).send_keys(text)
+
+    """ Do tutorial """
+    def creating_text(self):
+        self.wait.until(EC.visibility_of_element_located((Locators.START_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.TYPE_TEXT))).send_keys("Do tutorial test")
+        self.back_button(3)
+
+    def creating_checkbox(self):
+
+        self.driver.find_element(*Locators.START_TUTORIAL_BUTTON).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.driver.find_element(*Locators.START_TUTORIAL_BUTTON).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+
+    def final_step(self):
+
+        self.driver.find_element(*Locators.START_TUTORIAL_BUTTON).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+        self.wait.until(EC.visibility_of_element_located((Locators.SKIP_TUTORIAL_BUTTON))).click()
+
+        self.driver.find_element(*Locators.START_TUTORIAL_BUTTON).click()
