@@ -11,7 +11,7 @@ Feature: Do tutorial
     And press tree back button to close keyboard and save
 
   Scenario: Creating checkbox
-    Given user continue the tutorial
+    Given user continue the tutorial (1)
     When "Create a checklist" show up
     Then tap create a note button
     And tap add checklist
@@ -24,7 +24,7 @@ Feature: Do tutorial
     And press twice back button to save
 
   Scenario: Final step
-    Given user continue the tutorial
+    Given user continue the tutorial (2)
     When "Open the saved note" show up
     Then tap on last added note
     And on Pick up laundry

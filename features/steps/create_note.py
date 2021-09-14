@@ -1,6 +1,6 @@
 from behave import *
 import sys
-sys.path.append('../..') 
+sys.path.append('../..')
 from setup import Setup as Android
 
 
